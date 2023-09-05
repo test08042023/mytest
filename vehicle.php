@@ -84,7 +84,7 @@
         $email_headers = "From: $agent <$email>";
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($name, $email, $phone, $mco)) {
             
             http_response_code(200);
             echo "Thank You! Your message has been sent.";
