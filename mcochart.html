@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+<body>
+    <!-- Belongs to chart -->
+    <center style="padding-top: 80px;">
+        <canvas id="myChart" style="width:100%;max-width:80%"></canvas>
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // belong to Chart
+        var xValues = ["Ken", "Eric", "Aurthur", "Hayden", "Denver", "Jack", "Finn", "Chris", "Sarah", "Dennis", "Mario", "Juan"];
+        var yValues = [55, 100, 44, 24, 15, 34, 56, 40, 70, 30, 70, 89];
+        var barColors = ["red", "green", "blue", "orange", "brown", "purple", "aqua", "Gold", "Olive", "yellow", "teal", "maroon"];
+
+
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Agents MCO Chart"
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

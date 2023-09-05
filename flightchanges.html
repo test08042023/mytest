@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+
+
+   <title>Internal System</title>
+   <script src="https://smtpjs.com/v3/smtp.js">
+   </script>
+
+
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+
+   <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <!-- Font awesome -->
+   <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+   <script src="flightchanges.js"></script>
+</head>
+
+<body>
+   <!-- main section start -->
+   <section>
+      <div class="about_section vehicle_card_padding">
+         <center>
+            <h1 class="about_taital"><span class="blue">{</span> Flight Changes <span class="blue">}</span></h1>
+         </center>
+
+         <div class="card card_vehicle">
+            <form
+               action="https://script.google.com/macros/s/AKfycbxfckqFhKJLAzL5AplRQ2DPY8XIFYWhIiqWAl415-0sXD_1gSnY48n0_05zkPnNWnKc/exec"
+               method="post">
+               <h1 class="mb-4 white_vehicle">Pax Details:</h1>
+
+               <div class="form-row">
+                  <div class="form-group col-sm-3">
+                     <label for="Type"></label>
+                     <select type="text" class="form-control " id="type" name="type" placeholder="Booking Type">
+                        <option disabled selected>Booking Type</option>
+                        <option>New Booking</option>
+                        <option>Flight Changes</option>
+                        <option>Cancellation - Refund</option>
+                        <option>Cancellation - Credit</option>
+                        <option>other</option>
+                     </select>
+                  </div>
+               </div>
+               <h3 class="white_vehicle">Main Info:</h3>
+               <div class="form-row">
+                  <div class="form-group col-sm-3 From_left">
+                     <label for="name"></label>
+                     <input type="text" class="form-control  " id="name" name="name" placeholder=" First Name">
+                  </div>
+                  <div class="form-group col-sm-3 From_left">
+                     <label for="Mname"></label>
+                     <input type="text" class="form-control  " id="mname" name="mname" placeholder=" Middle Name">
+                  </div>
+                  <div class="form-group col-sm-3 From_left">
+                     <label for="Lname"></label>
+                     <input type="text" class="form-control  " id="Lname" name="Lname" placeholder=" Last Name">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="DOB"></label>
+                     <input type="date" class="form-control " id="dob" name="dob" placeholder="DOB">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="email"></label>
+                     <input type="email" class="form-control  " id="email" name="email" placeholder="Email">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="Sex"></label>
+
+                     <select type="text" class="form-control " id="sex" name="sex" placeholder="Sex">
+                        <option disabled selected>Sex</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>other</option>
+                     </select>
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="phone"></label>
+                     <input type="tel" class="form-control " id="phone" name="phone" placeholder="Phone Number">
+                  </div>
+               </div>
+
+
+               <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+               <!-- Add more Pax -->
+
+               <h3 class="mb-4 white_vehicle">Add More Pax:</h3>
+               <div>
+                  <div class="form-row">
+                     <p>
+                        <button class="btn btn-primary rounded btn_vehicle" type="button" data-toggle="collapse"
+                           data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                           ADD PAX
+                        </button>
+                     </p>
+                  </div>
+
+
+                  <!-- one pax add -->
+
+
+                  <div class="collapse" id="collapseExample1">
+                     <div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">1.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_1" name="fullname_1"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+
+                              <select type="text" class="form-control " id="sex_1" name="sex_1" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_1" name="dob_1" placeholder="DOB">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">2.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_2" name="fullname_2"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+                              <select type="text" class="form-control " id="sex_2" name="sex_2" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_2" name="dob_2" placeholder="DOB">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">3.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_3" name="fullname_3"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+                              <select type="text" class="form-control " id="sex_3" name="sex_3" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_3" name="dob_3" placeholder="DOB">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">4.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_4" name="fullname_4"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+                              <select type="text" class="form-control " id="sex_4" name="sex_4" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_4" name="dob_4" placeholder="DOB">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">5.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_5" name="fullname_5"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+                              <select type="text" class="form-control " id="sex_5" name="sex_5" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_5" name="dob_5" placeholder="DOB">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <h4 class="white_vehicle">6.</h4>
+                           <div class="form-group col-sm-3">
+                              <label for="fullname"></label>
+                              <input type="text" class="form-control  " id="fullname_6" name="fullname_6"
+                                 placeholder=" Full Name">
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="Sex"></label>
+                              <select type="text" class="form-control " id="sex_6" name="sex_6" placeholder="Sex">
+                                 <option disabled selected>Sex</option>
+                                 <option>Male</option>
+                                 <option>Female</option>
+                                 <option>other</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-sm-3">
+                              <label for="DOB"></label>
+                              <input type="date" class="form-control " id="dob_6" name="dob_6" placeholder="DOB">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+               <h3 class="white_vehicle">Card Details: </h3>
+               <div class="form-row">
+                  <div class="form-group col-sm-6">
+                     <label for="Card Number"></label>
+                     <input type="text" class="form-control " id="cardno" name="cardno" placeholder="Card Number">
+                  </div>
+                  <div class="form-group col-sm-6">
+                     <label for="Name On the Card"></label>
+                     <input type="text" class="form-control " id="cardname" name="cardname"
+                        placeholder="Name On the Card">
+                  </div>
+                  <h6 class="white_vehicle">Expiration: </h6>
+                  <div class="form-row">
+                     <div class="form-group col-sm-4">
+                        <label for="Month"></label>
+                        <select type="text" class="form-control " id="month" name="month" placeholder="Month">
+                           <option disabled selected>Month</option>
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                           <option>6</option>
+                           <option>7</option>
+                           <option>8</option>
+                           <option>9</option>
+                           <option>10</option>
+                           <option>11</option>
+                           <option>12</option>
+                        </select>
+                     </div>
+                     <div class="form-group col-sm-4">
+                        <label for="Year"></label>
+                        <select type="text" class="form-control " id="year" name="year" placeholder="Year" required>
+                           <option disabled selected>Year</option>
+                           <option value="2016">2016</option>
+                           <option value="2017">2017</option>
+                           <option value="2018">2018</option>
+                           <option value="2019">2019</option>
+                           <option value="2020">2020</option>
+                           <option value="2021">2021</option>
+                           <option value="2022">2022</option>
+                           <option value="2023">2023</option>
+                           <option value="2023">2024</option>
+                           <option value="2025">2025</option>
+                           <option value="2026">2026</option>
+                           <option value="2027">2027</option>
+                           <option value="2028">2028</option>
+                           <option value="2029">2029</option>
+                           <option value="2030">2030</option>
+                           <option value="2031">2031</option>
+                           <option value="2032">2032</option>
+                           <option value="2033">2033</option>
+                           <option value="2034">2034</option>
+                           <option value="2035">2035</option>
+
+                        </select>
+                     </div>
+                     <div class="form-group col-sm-4">
+                        <label for="CVV"></label>
+                        <input type="text" class="form-control " id="cvv" name="cvv" placeholder="CVV">
+                     </div>
+                  </div>
+
+                  <div class="form-group col-sm-12">
+                     <label for="Billing Address"></label>
+                     <input type="text" class="form-control " id="billing" name="billing" placeholder="Billing Address">
+                  </div>
+               </div>
+               <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+               <h3 class="white_vehicle">Extra Info: </h3>
+               <div class="form-row">
+                  <div class="form-group col-12">
+                     <label for="Airline"></label>
+                     <input type="text" class="form-control " id="airline" name="airline" placeholder="Airline">
+
+                  </div>
+                  <div class="form-group col-sm-6">
+                     <label for="Travel Date"></label>
+                     <input type="date" class="form-control " id="date" name="date" placeholder="Travel Date">
+                  </div>
+                  <div class="form-group col-sm-6">
+                     <label for="TFN"></label>
+                     <select type="text" class="form-control " id="tfn" name="tfn" placeholder="TFN" required>
+                        <option disabled selected>Select TFN</option>
+                        <option>18557383893</option>
+                        <option>18557383988</option>
+                        <option>18557384007</option>
+                        <option>18557384186</option>
+                        <option>18667380604</option>
+                        <option>AGENTDIRECT</option>
+                     </select>
+                  </div>
+                  <div class="form-group col-sm-12">
+                     <label for="time" class="white_vehicle">Select Current time: </label>
+                     <input class="form-control" type="datetime-local" id="time" name="time" min="09:00" max="18:00"
+                        placeholder="Time-Now">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="Ticket Price"></label>
+                     <input type="number" class="form-control " id="price" name="price" placeholder="Ticket Price">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="MCO"></label>
+                     <input type="number" class="form-control " id="mco" name="mco" placeholder="MCO">
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="Agent Name"></label>
+                     <select type="text" class="form-control " id="agent" name="agent" placeholder="Agent Name">
+                        <option disabled selected>Agent Name</option>
+                        <option>Ken (TL)</option>
+                        <option>Eric (TL)</option>
+                        <option>Aurthur (TL)</option>
+                        <option>Hayden (English)</option>
+                        <option>Denver (English)</option>
+                        <option>Jack (English)</option>
+                        <option>Finn (English)</option>
+                        <option>Chris (English)</option>
+                        <option>Sarah (English)</option>
+                        <option>Dennis (English)</option>
+                        <option>Mario (Spanish)</option>
+                        <option>Juan (Spanish)</option>
+                        <option>Other</option>
+                     </select>
+                  </div>
+                  <div class="form-group col-sm-3">
+                     <label for="PNR"></label>
+                     <input type="text" class="form-control " id="pnr" name="pnr" placeholder="PNR">
+                  </div>
+                  <div class="form-group col-12">
+                     <label for="message"></label>
+                     <textarea name="message" id="message" cols="30" rows="4" class="form-control "
+                        placeholder="Additional Message"></textarea>
+                  </div>
+
+
+                  <div class="form-group col-12 mb-0">
+                     <div class="form-row">
+                        <div class=" col-sm-6">
+                           <input type="button" onclick="showMessage()" value="Generate Email"
+                              class="btn btn-primary btn-lg btn-block rounded w-md mt-3 btn_vehicle">
+                        </div>
+                        <div class=" col-sm-6">
+                           <input class="btn btn-primary btn-lg btn-block rounded w-md mt-3 btn_vehicle" type="submit"
+                              id="sub">
+                        </div>
+
+                     </div>
+
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- main section end -->
+   <!-- Text generate to Pax section start -->
+   <section>
+      <div class="about_section  vehicle_card_padding">
+         <div class="card_pax card">
+
+
+            <div class="about_taital_main" id="demoB">
+               <p>Dear
+                  <span id="display_name"></span>
+                  <span id="display_mname"></span>
+                  <span id="display_Lname"></span>,
+                  <br><br>
+                  We hope this email finds you well. We are excited to provide you with the flight itinerary for
+                  your upcoming journey. Additionally, we would like to share the details of the charges,
+                  including the base fare and taxes. Furthermore, we kindly request your authorization by replying
+                  with either "I agree" or "I authorize" to confirm your acceptance of the charges. Please review
+                  the information below:
+                  <br><br>
+                  Please read the following details carefully regarding your upcoming travel. It is important to
+                  review these details to ensure accuracy. If you notice any errors or require any changes, kindly
+                  contact us immediately. Once the tickets are booked, any modifications or cancellations will be
+                  subject to the policy of the airlines.
+                  <br><br>
+                  Flight Itinerary:
+                  <br><br>
+                  <b>Image Here</b>
+                  <br><br><br>
+               <P>
+                  ----------------------------------------------------------------------------
+               </P>
+               </p>
+
+               <p>
+                  <br><br>
+                  Please take the time to verify that the passenger name(s), travel date, origin and destination
+                  cities, as well as the flight details, are correct. If you identify any discrepancies or require
+                  any adjustments, kindly inform us as soon as possible. We will do our best to accommodate your
+                  requests, subject to the terms and conditions set by the airlines.
+                  <br><br> 
+               </p>
+               <div>
+                  <table class="summaryTable">
+                     <tr>
+                        <th colspan="2">Summary</th>
+                     </tr>
+                     <tr>
+                        <td>Name</td>
+                        <td>
+                           <p> &nbsp;<span id="display_nameSF"></span>&nbsp;<span id="display_mnameSF"></span>&nbsp;<span id="display_LnameSF"></span></p>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td>Date of Birth</td>
+                        <td>
+                           <p> &nbsp;<span id="display_dobSF"></span></p>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td>Name of Cardholder</td>
+                        <td>
+                           <p> &nbsp;<span id="display_cardnameSF"></span></p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td>Phone</td>
+                        <td>
+                           <p> &nbsp;<span id="display_phoneSF"></span></p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td>Email</td>
+                        <td>
+                           <p> &nbsp;<span id="display_emailSF"></span></p>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td>Address</td>
+                        <td>
+                           <p> &nbsp;<span id="display_billingSF"></span></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Base Fare</td>
+                        <td>
+                           <p>$ &nbsp;<span id="display_priceSF"></span></p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Taxes & Fee</td>
+                        <td>
+                           <p>$ &nbsp;<span id="display_mcoSF"></span></p>
+                        </td>
+                     </tr>
+
+
+                     <tr>
+                        <td>Total Fare (Inc. Taxes & Fee)</td>
+                        <td>
+                           <p>$ &nbsp;<span id="display_totalSF"></span></p>
+                        </td>
+                     </tr>
+
+
+                  </table>
+               </div>
+               <br>
+
+               <!-- Extra Passengers will be added here. -->
+               <h4><span id="display_other_pax_details"></span></h4>
+               <p>
+                  <b> <span id="display_one"></span></b>
+                  <span id="display_fullname_1"></span>
+                  <span id="display_dash"></span>
+                  <span id="display_sex_1"></span>
+                  <span id="display_dash1"></span>
+                  <span id="display_dob_1"></span>
+
+                  <b> <span id="display_two"></span></b>
+                  <span id="display_fullname_2"></span>
+                  <span id="display_dash2"></span>
+                  <span id="display_sex_2"></span>
+                  <span id="display_dash3"></span>
+                  <span id="display_dob_2"></span>
+               </p>
+               <p>
+                  <b> <span id="display_three"></span></b>
+                  <span id="display_fullname_3"></span>
+                  <span id="display_dash4"></span>
+                  <span id="display_sex_3"></span>
+                  <span id="display_dash5"></span>
+                  <span id="display_dob_3"></span>
+               </p>
+               <p>
+                  <b> <span id="display_four"></span></b>
+                  <span id="display_fullname_4"></span>
+                  <span id="display_dash6"></span>
+                  <span id="display_sex_4"></span>
+                  <span id="display_dash7"></span>
+                  <span id="display_dob_4"></span>
+               </p>
+               <p>
+                  <b> <span id="display_five"></span></b>
+                  <span id="display_fullname_5"></span>
+                  <span id="display_dash8"></span>
+                  <span id="display_sex_5"></span>
+                  <span id="display_dash9"></span>
+                  <span id="display_dob_5"></span>
+               </p>
+               <p>
+                  <b> <span id="display_six"></span></b>
+                  <span id="display_fullname_6"></span>
+                  <span id="display_dash10"></span>
+                  <span id="display_sex_6"></span>
+                  <span id="display_dash11"></span>
+                  <span id="display_dob_6"></span>
+               </p><br><br>
+               <p>
+                  To proceed with the payment, kindly reply to this email with either "I agree" or "I authorize"
+                  in the body of the message. By doing so, you confirm your acceptance of the charges and
+                  authorize us to process the payment using the credit card provided during the booking process.
+                  Rest assured that we treat your personal and financial information with utmost confidentiality
+                  and adhere to strict security protocols.
+                  <br><br>
+                  Terms and Conditions:
+                  <br><br>
+                  -Payment Authorisation: By replying to this email with your payment details, you authorise us to
+                  charge the provided credit card for the total amount mentioned above. <br>
+                  -Changes and cancellations to bookings are subject to the terms and conditions of the respective
+                  travel service providers. <br>
+                  -The customer may be responsible for fees, penalties, or fare differences imposed by the travel
+                  service providers for changes or cancellations. <br>
+                  -The Agency strongly recommends that customers obtain travel insurance to protect against
+                  unforeseen events, such as trip cancellations, medical emergencies, or lost baggage. <br>
+                  -The purchase of travel insurance is optional and the responsibility of the customer. <br>
+                  -The customer is responsible for obtaining and ensuring the validity of all required travel
+                  documents, such as passports, visas, and health certificates. <br>
+                  -The Agency may provide general information and assistance regarding travel documents, but it is
+                  the customer's responsibility to verify specific requirements with the relevant authorities.
+                  <br>
+                  -Non-Refundable Service Fee: Please note that the service fee associated with this booking is
+                  non-refundable, even if you decide to cancel or modify your reservation. <br>
+                  <br><br>
+
+               </p>
+               <p>
+
+                  ( I, <span id="display_name2"></span>&nbsp;
+                  <span id="display_mname2"></span>&nbsp;
+                  <span id="display_Lname2"></span>
+                  , hereby authorize
+                  to charge the total amount of $<span id="display_total1"></span> on which difference in fare
+                  $<span id="display_price1"></span> + $<span id="display_mco1"></span> taxes and fee on my credit
+                  card number
+                  ending with "<Span id="display_cardno1"></Span>" for flight Booking. ) <br><br>
+
+
+
+                  Please carefully review these terms and conditions before engaging with our services.If
+                  you have
+                  any questions or require further assistance, please do not hesitate to reach out to our
+                  customer
+                  support team at 1571 255 1499 . We are here to assist you throughout your travel journey.
+               </p>
+               <br>
+
+
+            </div>
+            <div class="row">
+               <div class="col-sm-2">
+                  <input class="btn btn-primary  rounded w-md mt-3 btn_pax" type="button" value="Print Above Section"
+                     onclick="printpart()">
+               </div>
+               <div class="col-sm-1">
+                  <input id="button1" class="btn btn-primary  rounded w-md mt-3 btn_pax" type="button" value="Copy"
+                     onclick="CopyToClipboard('demoB')">
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+
+
+
+   <!-- Text generate to Ken section start -->
+   <section>
+      <div class="about_section vehicle_card_padding">
+         <div class="card_pax card">
+            <div id="tl">
+               <div class="about_taital_main">
+                  <p class="about_text" align="justify">
+                     MCO: <span id="display_mco3"></span><br>
+                     PNR: <span id="display_pnr"></span><br>
+                     Airline: <span id="display_airline"></span><br>
+                     Pax Full Name: <span id="display_name3"></span> <span id="display_mname3"></span> <span
+                        id="display_Lname3"></span> <br>
+                     Complete Billing Address: <span id="display_billing3"></span><br>
+                     Card Number: <span id="display_cardno3"></span><br>
+                     Card Holder: <span id="display_cardname3"></span><br>
+                     Expriration: <span id="display_month3"></span>/<span id="display_year3"></span><br>
+                     CVV: <span id="display_cvv"></span><br>
+                     Email: <span id="display_email3"></span><br>
+                     Phone: <span id="display_phone3"></span><br>
+                     Travel Date: <span id="display_date"></span><br>
+                     TFN: <span id="display_tfn"></span><br>
+                     Agent Name: <span id="display_agent"></span><br>
+                     Current Time and Date: <span id="display_time"></span><br>
+
+                  </p>
+               </div>
+            </div>
+            <div class="col-sm-1">
+               <input id="button1" class="btn btn-primary  rounded w-md mt-3 btn_pax" type="button" value="Copy"
+                  onclick="CopyToClipboard('tl')">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- text generate to ken section end -->
+
+
+
+
+
+
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
